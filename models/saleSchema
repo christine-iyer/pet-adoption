@@ -1,0 +1,10 @@
+const {model ,Schema, default: mongoose}= require('mongoose')
+const saleItemSchema = new Schema({
+     id: {type: String},
+     title: {type: String, required:true},
+     description: {type: String, required:true}
+})
+
+const saleItem = mongoose.model('saleItemSchema',saleItemSchema)
+module.exports = saleItemSchema
+
